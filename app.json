@@ -1,0 +1,12 @@
+{
+  "name": "mawie",
+  "displayName": "mawie",
+  "expo": {
+    "name": "mawie",
+    "slug": "mawie",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
