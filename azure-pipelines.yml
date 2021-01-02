@@ -18,8 +18,8 @@ steps:
 - script: |
     yarn
     yarn build:web
-    yarn build:android
-  displayName: 'Install and build'
+    yarn test
+  displayName: 'Build and Test'
 
 
 - script: | 
@@ -27,7 +27,7 @@ steps:
     git config --local user.email "azuredevops@microsoft.com"
     git add .
     git commit -m "Publishing GitHub Pages  ***NO_CI***"
-  displayName: 'Build and commit pages'
+  displayName: 'Build and commit'
 
 
 - task: DownloadSecureFile@1
