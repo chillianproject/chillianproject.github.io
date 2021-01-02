@@ -17,5 +17,5 @@ steps:
 
 - script: |
     yarn
-    yarn build:web
+    yarn run build:web
   displayName: 'install and build'
