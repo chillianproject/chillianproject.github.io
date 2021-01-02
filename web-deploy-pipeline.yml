@@ -18,7 +18,7 @@ steps:
 - script: |
     yarn
     yarn build:web
-  displayName: 'Build and Test'
+  displayName: 'Build for Web'
 
 - script: | 
     git config --local user.name "Azure Pipelines"
