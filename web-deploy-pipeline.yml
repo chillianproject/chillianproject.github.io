@@ -15,6 +15,11 @@ steps:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
 
+- script: |
+    yarn
+    yarn build:web
+  displayName: 'Build and Test'
+
 - script: | 
     git config --local user.name "Azure Pipelines"
     git config --local user.email "azuredevops@microsoft.com"
@@ -22,12 +27,10 @@ steps:
     git commit -m "Publishing GitHub Pages  ***NO_CI***"
   displayName: 'Build and commit'
 
-
 - task: DownloadSecureFile@1
   inputs:
     secureFile: deploy_key
   displayName: 'Get the deploy key'
-
 
 - script: |
     mkdir ~/.ssh && mv $DOWNLOADSECUREFILE_SECUREFILEPATH ~/.ssh/id_rsa
