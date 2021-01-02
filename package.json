@@ -6,9 +6,9 @@
         "web": "expo start --web",
         "start": "react-native start",
         "test": "jest",
-        "build:web": "expo build:web",
-        "build:ios": "expo build:ios",
-        "build:android": "expo build:android"
+        "build:web": "expo build:web --non-interactive",
+        "build:android": "expo build:android -t apk --non-interactive",
+        "publish:android": "expo build:android -t app-bundle --non-interactive"
     },
     "dependencies": {
         "expo": "~40.0.0",
