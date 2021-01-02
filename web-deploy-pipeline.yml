@@ -24,7 +24,7 @@ steps:
     git config --local user.name "Azure Pipelines"
     git config --local user.email "azuredevops@microsoft.com"
     git add .
-    git commit -m "Publishing GitHub Pages  ***NO_CI***"
+    git commit -m "Publishing GitHub Pages  ***NO_CI***" | true
   displayName: 'Build and commit'
 
 - task: DownloadSecureFile@1
