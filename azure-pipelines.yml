@@ -17,5 +17,6 @@ steps:
 
 - script: |
     yarn
-    yarn run build:web
+    yarn build:web
+    yarn build:android
   displayName: 'install and build'
