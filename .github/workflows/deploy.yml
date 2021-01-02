@@ -22,4 +22,4 @@ jobs:
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: host # The branch the action should deploy to.
-          FOLDER: dist # The folder the action should deploy.
+          FOLDER: web-build # The folder the action should deploy.
