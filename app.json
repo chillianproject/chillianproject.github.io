@@ -7,6 +7,12 @@
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "ios": {
+      "bundleIdentifier": "com.chillianproject.mawie"
+    },
+    "android": {
+      "package": "com.chillianproject.mawie"
+    }
   }
 }
