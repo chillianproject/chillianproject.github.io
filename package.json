@@ -11,9 +11,13 @@
         "publish:android": "expo build:android -t app-bundle --non-interactive"
     },
     "dependencies": {
+        "@chakra-ui/react": "^1.1.4",
+        "@emotion/react": "^11.1.4",
+        "@emotion/styled": "^11.0.0",
         "expo": "~40.0.0",
         "expo-splash-screen": "~0.8.0",
         "expo-updates": "~0.4.0",
+        "framer-motion": "^3.2.1",
         "react": "^17.0.1",
         "react-dom": "^17.0.1",
         "react-native": "~0.63.4",
